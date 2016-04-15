@@ -1,0 +1,231 @@
+body{
+	margin: 0 auto;
+	width: 1600px;
+	height: 100%;
+	background: linear-gradient(#000 159px, transparent 160px, transparent 690px, transparent 691px, transparent 1190px, #000 1191px, #000 100%) no-repeat;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.allt{
+	height: 100%;
+	width: 1280px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+a{
+	text-decoration: none;
+}
+.Haus{
+	padding-top: 5px;
+	height: 200px;
+	width: 100%;
+}
+.deadpool_mynd1{
+	margin-top: 10px;
+	width: 100px;
+	height: 100px;
+}
+.deadpool_mynd2{
+	margin-top: 10px;
+	width: 300px;
+	height: 100px;
+}
+nav ul {
+	width: 66%;
+	float: right;
+	display: block;
+	padding: 0px;
+	padding-top: 20px;
+	margin: 0px;
+	margin-top: -116px;
+	list-style: none;
+	text-align: center;
+	font-family: 'Teko', sans-serif;
+	font-size: 50px;
+	margin-left: 20px;
+} 
+nav ul li {
+	display: inline;
+	padding: 1px; 
+	margin: 0px;
+	list-style: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: darkred;
+	height: 30px;
+	padding: 4px;
+}
+.link:hover {
+	color: #09F;
+	background: url("blood.png");
+	background-size: 120% 120%;
+	color: white;
+}
+.link{
+	height: 30px;
+	margin-left: 0px;
+	margin-right: 0px;
+	font-size: 30px;
+}
+section{
+	margin-top: -45.7px;
+	margin-left: -265px;
+	height: 530px;
+	width: 1736px;
+	color: #999;
+	font-family: 'Palanquin', sans-serif;
+	overflow: hidden;
+	background: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/Deadpool-HD-Wallpapers.jpg");
+	background-size: 100% 100%;
+}
+section h1{
+	margin-top: 100px;
+	font-family: 'Palanquin', sans-serif;
+	font-size: 50px;
+	margin-left: 400px;
+}
+section h3{
+	color: white;
+	font-size: 20px;
+	margin-left: 425px;
+	margin-top: -40px;
+}
+section div{
+	height: 100%;
+}
+section div a div{
+	margin-top: 1px;
+	height: 530px;
+}
+.skoda{
+	height: 30px;
+	color: #999;
+	text-decoration: none;
+}
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: 0%; }
+}
+div#slider { overflow: hidden; }
+div#slider figure div { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+footer{
+	height: 502px;
+	width: 1714px;
+	margin-left: -243px;
+	margin-bottom: -11px;
+}
+.frettir {
+	float: left;
+	margin-left: 245px;
+	margin-top: 1px;
+	width: 40%;
+	height: 500px;
+	font-family: 'Palanquin', sans-serif;
+	padding-left: 10px;
+}
+.undirfrettir img{
+	width: 227px;
+	height: auto;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+.yfirfrettir{
+	float: left;
+	height: 100%;
+	width: 65%;
+}
+.undirfrettir{
+	float: right;
+	width: 33%;
+	height: 100%;
+}
+.undirfrettir_frettir1{
+	width: 100%;
+	height: 33%;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	margin-top: -20px;
+	padding-left: 5px;
+}
+.undirfrettir_frettir2{
+	width: 100%;
+	height: 33%;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	margin-top: -21px;
+	padding-left: 5px;
+}
+.undirfrettir_frettir3{
+	width: 100%;
+	height: 33%;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+	margin-top: -21px;
+	padding-left: 5px;
+}
+.auglysingar{
+	float: left;
+	width: 1736px;
+	height: 200px;
+	color: white;
+	padding-top: 50px;
+	margin-top: -2px;
+	margin-left: -265px;
+}
+.insta{
+	width: 771.42px;
+	height: 500px;
+	float: left;
+	margin-left: 2px;
+	font-family: 'Palanquin', sans-serif;
+	background: black;
+}
+.insta img{
+	width: 771.42px;
+	height: 400px;
+	float: left;
+	margin-left: 0px;
+	font-family: 'Palanquin', sans-serif;
+}
+.insta h1{
+	padding-left: 80px;
+	color: white;
+}
+.footer-logo1 {
+	margin-left: 10%;
+    position: relative;
+    display: block;
+    margin-right: 0.8em;
+    margin-left: 300px;
+    float: left;
+    width: 30%;
+}
+.footer-logo2 {
+	margin-left: 20%;
+    position: relative;
+    display: block;
+    margin-right: 0.8em;
+    float: left;
+    width: 30%;
+}
