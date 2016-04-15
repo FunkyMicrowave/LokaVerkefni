@@ -1,2 +1,0 @@
-# LokaVerkefni
-test
