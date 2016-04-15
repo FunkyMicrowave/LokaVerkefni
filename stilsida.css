@@ -2,7 +2,7 @@ body{
 	margin: 0 auto;
 	width: 1600px;
 	height: 100%;
-	background: linear-gradient(#000 159px, transparent 160px, transparent 690px, transparent 691px, transparent 1190px, #000 1191px, #000 100%) no-repeat;
+	background: black;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -124,7 +124,7 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s slidy infinite; 
+  animation: 20s slidy infinite;
 }
 footer{
 	height: 502px;
@@ -140,9 +140,10 @@ footer{
 	height: 500px;
 	font-family: 'Palanquin', sans-serif;
 	padding-left: 10px;
+	color: white;
 }
 .undirfrettir img{
-	width: 227px;
+	width: 231px;
 	height: auto;
 	margin-left: -5px;
 	margin-top: -5px;
@@ -152,6 +153,9 @@ footer{
 	height: 100%;
 	width: 65%;
 }
+.frettir a{
+	color: white;
+}
 .undirfrettir{
 	float: right;
 	width: 33%;
@@ -160,27 +164,27 @@ footer{
 .undirfrettir_frettir1{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 	margin-top: -20px;
 	padding-left: 5px;
 }
 .undirfrettir_frettir2{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 	margin-top: -21px;
 	padding-left: 5px;
 }
 .undirfrettir_frettir3{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid gray;
-	border-left: 1px solid gray;
-	border-right: 1px solid gray;
+	border-bottom: 1px solid white;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
 	margin-top: -21px;
 	padding-left: 5px;
 }
@@ -194,18 +198,20 @@ footer{
 	margin-left: -265px;
 }
 .insta{
-	width: 771.42px;
+	width: 766.42px;
 	height: 500px;
 	float: left;
-	margin-left: 2px;
+	margin-top: -1px;
+	margin-left: 7px;
 	font-family: 'Palanquin', sans-serif;
 	background: black;
+	border-bottom: 1px solid white;
+	padding-bottom: 1px;
 }
 .insta img{
-	width: 771.42px;
+	width: 766.42px;
 	height: 400px;
 	float: left;
-	margin-left: 0px;
 	font-family: 'Palanquin', sans-serif;
 }
 .insta h1{
