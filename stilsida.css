@@ -1,8 +1,8 @@
 body{
 	margin: 0 auto;
 	background: black;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 0.3125em;
+	padding-right: 0.3125em;
 }
 .allt{
 	height: 100%;
@@ -12,25 +12,26 @@ a{
 	text-decoration: none;
 }
 .Haus{
-	padding-top: 5px;
-	height: 200px;
+	padding-top: 0.3125em;
+	height: 12.5em;
 	width: 100%;
 }
 .deadpool_mynd1{
-	margin-top: 10px;
-	width: 100px;
-	height: 100px;
+	margin-top: 0.625em;
+	width: 6.25em;
+	height: 6.25em;
 }
 .deadpool_mynd2{
-	margin-top: 10px;
-	width: 300px;
-	height: 100px;
-	margin-left: -30px;
+	margin-top: 0.625em;
+	width: 18.75em;
+	height: 6.25em;
+	margin-left: -1.875em;
 }
 nav {
 	width: 95%;
 	float: right;
-	max-height: 100px;
+	max-height: 6.25em;
+	position: fixed;
 }
 nav ul {
 	width: 66%;
@@ -43,7 +44,7 @@ nav ul {
 	list-style: none;
 	text-align: center;
 	font-family: 'Teko', sans-serif;
-	font-size: 50px;
+	font-size: 25px;
 	margin-left: 20px;
 } 
 nav ul li {
@@ -56,7 +57,7 @@ nav ul li {
 nav a{
 	text-decoration: none;
 	color: darkred;
-	height: 30px;
+	height: 1.875em;
 	padding: 4px;
 }
 .link:hover {
@@ -66,14 +67,14 @@ nav a{
 	color: white;
 }
 .link{
-	height: 30px;
+	height: 1.875em;
 	margin-left: 0px;
 	margin-right: 0px;
-	font-size: 30px;
+	font-size: 1.875em;
 }
 section{
 	margin-top: -45.7px;
-	height: 530px;
+	height: 51.875em;
 	width: 100%;
 	color: #999;
 	font-family: 'Palanquin', sans-serif;
@@ -82,7 +83,7 @@ section{
 	background-size: 100% 100%;
 }
 section h1{
-	margin-top: 100px;
+	margin-top: 6.25em;
 	font-family: 'Palanquin', sans-serif;
 	font-size: 50px;
 	margin-left: 13%;
@@ -98,12 +99,15 @@ section div{
 }
 section div a div{
 	margin-top: 1px;
-	height: 530px;
+	height: 51.875em;
 }
 .skoda{
-	height: 30px;
+	height: 1.875em;
 	color: #999;
 	text-decoration: none;
+}
+input {
+	display: none;
 }
 @keyframes slidy {
 0% { left: 0%; }
@@ -152,64 +156,66 @@ footer {
 .undirfrettir img{
 	width: 231px;
 	height: auto;
-	margin-left: -5px;
-	margin-top: -5px;
+	margin-left: -0.3125em;
+	margin-top: -0.3125em;
 }
 .yfirfrettir{
 	float: left;
 	height: 100%;
-	width: 65%;
+	width: 33.33%;
 }
 .frettir a{
 	color: white;
 }
 .undirfrettir{
-	float: left;
+	float: right;
 	width: 27%;
 	height: 100%;
 }
 .undirfrettir_frettir1{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid white;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	
 	margin-top: -20px;
-	padding-left: 5px;
+	padding-left: 0.3125em;
+	text-align: center;
 }
 .undirfrettir_frettir2{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid white;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
-	margin-top: -21px;
-	padding-left: 5px;
+	
+	padding-left: 0.3125em;
+	text-align: center;
 }
 .undirfrettir_frettir3{
 	width: 100%;
 	height: 33%;
-	border-bottom: 1px solid white;
-	border-left: 1px solid white;
-	border-right: 1px solid white;
+	
 	margin-top: -21px;
-	padding-left: 5px;
+	padding-left: 0.3125em;
+	text-align: center;
 }
 .auglysingar{
 	float: left;
 	width: 100%;
-	height: 200px;
+	height: 12.5em;
 	color: white;
 	padding-top: 50px;
 	margin-top: -2px;
 }
+.leikur
+{
+	text-align: center;
+}
 .insta{
-	width: 100%;
-	height: 700px;
-	float: left;
+	width: 50%;
+	height: 500px;
 	margin-top: -1px;
 	font-family: 'Palanquin', sans-serif;
 	background: black;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 .insta img{
 	width: 100%;
@@ -239,11 +245,123 @@ table {
 	height: 1000px;
 }
 td img {
-	width: 200px;
-	height: 200px;
+	width: 12.5em;
+	height: 12.5em;
 	z-index: 2;
 }
 td p {
 	margin-top: -60px;
 	z-index: 3;
+}
+
+
+@media (max-width: 48em) {
+
+	.footer-logo1 {
+		margin-left: 15%;
+    	position: relative;
+    	display: block;
+    	float: left;
+    	width: 100%;
+	}
+	.footer-logo2 {
+		margin-left: 30%;
+    	position: relative;
+    	display: block;
+    	float: left;
+    	width: 100%;
+	}
+	.auglysingar{
+		float: left;
+		width: 100%;
+		height: 300px;
+		color: white;
+		padding-top: 50px;
+		margin-top: -2px;
+	}
+	ul {
+	background-color: #584f4d;
+	border:none;
+	padding: 0;
+	margin: 0;
+	}
+	li {
+	color: #fff;
+	border: 1px solid white;
+	font-size: 20px;
+	letter-spacing: .05em;
+	list-style-type: none;
+	height: 50px;
+	background: transparent url('images/icon-link.png') 99% 50% no-repeat;
+	background-color: black;
+	}
+	li a {
+	color: #fff;
+	text-decoration: none;
+    display: block;
+	}
+	input {
+  	display: none;
+	}
+	label,
+	ul {
+  	border: 1px solid #cecfd5;
+  	border-radius: 6px;
+  	background-color: #403c3b;
+	}
+	label {
+  	color: white;
+  	cursor: pointer;
+  	display: inline-block;
+ 	font-size: 18px;
+ 	padding: 0.3125em 9px;
+ 	transition: all .15s ease;
+ 	position: fixed;
+ 	top: 4px;
+ 	z-index: 4;
+	}
+	nav ul li {
+		display: block;
+	}
+	input:checked + label {
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  	color: #9799a7;
+  	position: fixed;
+	}
+	nav {
+  	max-height: 0;
+  	overflow: hidden;
+  	transition: all .15s ease;
+  	z-index: 3;
+  	position: fixed;
+  	top: 0;
+	}
+	input:checked ~ nav {
+  	max-height: 100%;
+  	width: 100%;
+	}
+	nav ul {
+  	list-style: none;
+  	margin: 8px 0 0 0;
+  	width: 99%;
+  	}
+	nav li {
+  	border-bottom: 1px solid #cecfd5;
+	}
+	nav li:last-child {
+  	border-bottom: 0;
+	}
+	.link:hover {
+	color: #09F;
+	background: none;
+	background-size: 120% 120%;
+	color: white;
+	}
+	.frettir{
+		width: 100%;
+		height: 1000px;
+	}
+	.yfirfrettir{
+		width: 100%;
+	}
 }
