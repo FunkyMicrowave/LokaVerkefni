@@ -12,12 +12,12 @@
 	<body>
 		<div class="allt">
 			<div class="Haus">
-				<a href="#">
+				<a class="linkurinn" href="#">
 					<img class="deadpool_mynd1" src="deadpool-logo.png" alt="Deadpool">
 					<img class="deadpool_mynd2" src="Ryan-Reynold-Deadpool.png" alt="Deadpool">
 				</a>
 				<input type="checkbox" id="toggle">
-                <label for="toggle">☰</label>
+                <label for="toggle"><img src="deadpool-logo.png"></label>
 				<nav class="linkar">
 					<ul>
 						<li>
@@ -30,10 +30,7 @@
 							<a class="link" href="leikur.html">Leikur</a>
 						</li>
 						<li>
-							<a class="link" href="#">Um Deadpool</a>
-						</li>
-						<li>
-							<a class="link" href="..\Marvel\index.html">Um Marvel</a>
+							<a class="link" href="..\Marvel\index.html">Marvel</a>
 						</li>
 					</ul>
 				</nav>
@@ -41,28 +38,28 @@
 			<section ontouchmove="BlockMove(event);">
 				<div id="slider">
 					<figure>
-						<a class="skoda" href="#1">
+						<a class="skoda" href="https://www.facebook.com/DeadpoolMovie/?fref=ts" target="_blank">
 							<div>
-								<h1>Auglýsing 1</h1>
-								<h3>Getur ýtt á til að opna link<br>Á eftir að breyta litum finnst þeir ekki passa</h3>
+								<h1>Facebook</h1>
+								<h3>Facebook síða Deadpool. Smelltu til að skoða hana</h3>
 							</div>
 						</a>
-						<a class="skoda" href="#2">
+						<a class="skoda" href="https://www.youtube.com/watch?v=6dTThD7uLVk" target="_blank">
 							<div>				
-								<h1>Auglýsing 2</h1>
-								<h3>Getur ýtt á til að opna link<br>Á eftir að breyta litum finnst þeir ekki passa</h3>
+								<h1>Krakka gaman</h1>
+								<h3>Nýjasti þátturinn af krakka gaman er kominn út smelltu til að horfa</h3>
 							</div>
 						</a>
-						<a class="skoda" href="#3">
+						<a class="skoda" href="..\Marvel\undirsidur\Hulk.html">
 							<div>				
-								<h1>Auglýsing 3</h1>
-								<h3>Getur ýtt á til að opna link<br>Á eftir að breyta litum finnst þeir ekki passa</h3>
+								<h1>Hulk</h1>
+								<h3>Hann er sterkastur, einn af þeim gáfuðustu og sniðugustu. Smelltu til að lesa meira</h3>
 							</div>
 						</a>
-						<a class="skoda" href="#4">
+						<a class="skoda" href="http://www.imdb.com/title/tt3498820/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=2483406462&pf_rd_r=0VWQ626MATQ4060GZ0PK&pf_rd_s=hero&pf_rd_t=15061&pf_rd_i=homepage&ref_=hm_hp_cap_pri_1" target="_blank">
 							<div>				
-								<h1>Auglýsing 4</h1>
-								<h3>Getur ýtt á til að opna link<br>Á eftir að breyta litum finnst þeir ekki passa</h3>
+								<h1>Nýtt!!!</h1>
+								<h3>Nýjasta Captain America myndin er kominn í bíó smelltu til að lesa meira</h3>
 							</div>
 						</a>
 						<a class="skoda" href="#5">
@@ -76,11 +73,37 @@
 			</section>
 			<footer>
 				<div class="frettir">
-					<a href="#umDeadpool">
 						<div class="yfirfrettir">
-							<h1>Fréttir</h1>
-						</div>
-					</a>
+							<h1>Kaupa</h1>
+							<form action="sala.html">
+							<div class="kaupa">
+								<label class="Nafn">Nafn</label>
+								<input class="Nafn1" type="text" name="username" placeholder="Jón Jónsson" required>
+							</div>
+							<div class="kaupa">
+								<label class="Email">Email</label>
+								<input class="Email1" type="email" name="email-address" placeholder="jon@jonsson.is" required>
+							</div>
+							<div class="kaupa">
+							<label class="Hlutur"> Leikurinn / Myndin</label>
+								<input class="Hlutur1" type="checkbox" name="hlutur" value="Leikurinn"> 
+								<input class="Hlutur2" type="checkbox" name="hlutur" value="Myndin">
+							</div>
+							<div class="kaupa">
+								<label class="Simi">Simi</label>
+								<input class="Simi1" type="tel" pattern="^\d{7}$" name="simi" placeholder="5812345" required></div>
+							<div class="kaupa">
+								<label class="Heimilisfang">Heimilisfang</label>
+								<input class="Heimilisfang1" type="text" name="address" placeholder="The White House" required>
+							</div>
+							<div class="takki">
+								<a href="sala.html"><input class="button" type="submit" value="Submit"></a>
+								<a href="sala.html"><button>Staðfesta</button></a>
+							</div>
+							</form>
+							
+							
+							</div>
 					
 					<div class="undirfrettir">
 					<div class="undirfrettir_frettir1"><h4>Hann er aðeins öðruvísi</h4><img src="deadpool.gif"></div>
