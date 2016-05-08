@@ -1,8 +1,46 @@
 body{
 	margin: 0 auto;
 	background: black;
-	padding-left: 0.3125em;
-	padding-right: 0.3125em;
+    width: 99%;
+	padding-left: 0.1em;
+	padding-right: 0.1em;
+}
+::-webkit-scrollbar /* Ekki min hugmynd. Snorri og Eggert syndu mer hvernig aetti að gera svona */
+{
+	width: 12px;
+	background-color: #000;
+}
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: darkred;
+	background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}
+::-webkit-scrollbar-corner { 
+    background: rgba(0,0,0,1); 
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: darkred;
+    background-image: url("blood.png");
+}
+button {
+  border: 0;
+  background: darkred;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #5A0000;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+  margin-top: 20px;
+  margin-left: 60px;
+}
+button:active {
+  box-shadow: 0 2px 0 #5A0000;
+  transform: translateY(3px);
 }
 .allt{
 	height: 100%;
@@ -29,7 +67,7 @@ a{
 }
 nav {
 	width: 95%;
-	float: right;
+	float: left;
 	max-height: 6.25em;
 	position: fixed;
 }
@@ -93,6 +131,7 @@ section h3{
 	font-size: 20px;
 	margin-left: 14%;
 	margin-top: -40px;
+    width: auto;
 }
 section div{
 	height: 100%;
@@ -107,6 +146,9 @@ section div a div{
 	text-decoration: none;
 }
 input {
+	display: none;
+}
+label{
 	display: none;
 }
 @keyframes slidy {
@@ -134,11 +176,15 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 20s slidy infinite;
+  animation: 16s slidy infinite;
 }
 figure {
 	margin: 0;
 	padding: 0;
+}
+figure a{
+	width: 100%;
+	height: 100%;
 }
 footer {
 	height: 502px;
@@ -163,6 +209,7 @@ footer {
 	float: left;
 	height: 100%;
 	width: 33.33%;
+	padding-left: 10px;
 }
 .frettir a{
 	color: white;
@@ -206,6 +253,10 @@ footer {
 .leikur
 {
 	text-align: center;
+}
+.trailer{
+	float: right;
+	width: 33.33%
 }
 .insta{
 	width: 50%;
@@ -253,8 +304,95 @@ td p {
 	margin-top: -60px;
 	z-index: 3;
 }
-
-
+.kaupa{
+	width: 100%;
+	float: left;
+}
+	.Nafn{
+		display: block;
+		position: relative;
+		margin-top: 0px;
+		float: left;
+		z-index: 2;
+	}
+	.Nafn1{
+		margin-left: 20px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+	.Email{
+		display: block;
+		position: relative;
+		margin-top: 0px;
+		float: left;
+		z-index: 2;
+	}
+	.Email1{
+		margin-left: 20px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+	.Hlutur{
+		margin-left: 20px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+	.Hlutur1{
+		margin-left: -105px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+		margin-top: 35px;
+	}
+	.Hlutur2{
+		margin-left: -40px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+		margin-top: 35px;
+	}
+	.Simi{
+		display: block;
+		position: relative;
+		margin-top: 0px;
+		float: left;
+		z-index: 2;
+	}
+	.Simi1{
+		margin-left: 20px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+		margin-top: 5px;
+	}
+	.Heimilisfang{
+		display: block;
+		position: relative;
+		margin-top: 0px;
+		float: left;
+		z-index: 2;
+	}
+	.Heimilisfang1{
+		margin-left: 20px;
+		float: left;
+		display: block;
+		position: relative;
+		z-index: 2;
+	}
+@media (max-width: 1024px) {
+	li{
+		font-size: 20px;
+	}
+}
 @media (max-width: 48em) {
 
 	.footer-logo1 {
@@ -262,38 +400,53 @@ td p {
     	position: relative;
     	display: block;
     	float: left;
-    	width: 100%;
+    	width: 50%;
 	}
 	.footer-logo2 {
 		margin-left: 30%;
     	position: relative;
     	display: block;
     	float: left;
-    	width: 100%;
+    	width: 50%;
 	}
 	.auglysingar{
 		float: left;
 		width: 100%;
-		height: 300px;
+		height: 200px;
 		color: white;
 		padding-top: 50px;
-		margin-top: -2px;
+		margin-top: -260px;
+	}
+    .auglysingar1{
+		float: left;
+		width: 100%;
+		height: 200px;
+		color: white;
+		padding-top: 50px;
+		margin-top: -260px;
+	}
+    .auglysingar2{
+		float: left;
+		width: 100%;
+		height: 200px;
+		color: white;
+		padding-top: 50px;
+		margin-top: -60px;
 	}
 	ul {
-	background-color: #584f4d;
+	background-color: transparent;
 	border:none;
 	padding: 0;
 	margin: 0;
 	}
 	li {
 	color: #fff;
-	border: 1px solid white;
+	border: 0px solid white;
 	font-size: 20px;
 	letter-spacing: .05em;
 	list-style-type: none;
-	height: 50px;
-	background: transparent url('images/icon-link.png') 99% 50% no-repeat;
-	background-color: black;
+	height: 15%;
+	background-color: transparent;
 	}
 	li a {
 	color: #fff;
@@ -301,24 +454,29 @@ td p {
     display: block;
 	}
 	input {
+	float: left;
   	display: none;
 	}
 	label,
 	ul {
-  	border: 1px solid #cecfd5;
-  	border-radius: 6px;
-  	background-color: #403c3b;
-	}
+  	border: 0px solid #cecfd5;
+  	border-radius: 25px;
+  	background-color: transparent;
+    }
 	label {
   	color: white;
   	cursor: pointer;
   	display: inline-block;
  	font-size: 18px;
- 	padding: 0.3125em 9px;
+ 	padding: 0;
  	transition: all .15s ease;
  	position: fixed;
+ 	float: left;
  	top: 4px;
+ 	left: 4px;
  	z-index: 4;
+ 	height: 40px;
+ 	transform: rotate(0deg);
 	}
 	nav ul li {
 		display: block;
@@ -327,41 +485,167 @@ td p {
 	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   	color: #9799a7;
   	position: fixed;
+  	transform: rotate(90deg);
+  	margin-top: -20px;
+  	margin-left: 20px;
 	}
 	nav {
   	max-height: 0;
   	overflow: hidden;
-  	transition: all .15s ease;
   	z-index: 3;
   	position: fixed;
+  	width: 50%;
+  	height: 80%;
   	top: 0;
+  	float: left;
+  	background: url(Deadpool-Link.png) no-repeat black;
+  	background-size: 100% 100%;
 	}
 	input:checked ~ nav {
   	max-height: 100%;
+  	height: 100%;
+    margin-left: -1%;
   	width: 100%;
+  	position: fixed;
 	}
 	nav ul {
   	list-style: none;
   	margin: 8px 0 0 0;
-  	width: 99%;
+  	width: 50%;
+  	height: 100%;
+  	float: left;
   	}
 	nav li {
-  	border-bottom: 1px solid #cecfd5;
+  	border-bottom: 0px solid #cecfd5;
 	}
 	nav li:last-child {
   	border-bottom: 0;
 	}
 	.link:hover {
 	color: #09F;
-	background: none;
-	background-size: 120% 120%;
+	background: transparent;
 	color: white;
 	}
 	.frettir{
-		width: 100%;
+		width: 99%;
 		height: 1000px;
+		margin-left: 20px;
 	}
 	.yfirfrettir{
+		width: 80%;
+		height: 610px;
+	}
+    .link1{
+        font-size: 33px;
+    }
+	.undirfrettir{
+	float: right;
+	width: 100%;
+	height: 100%;
+	margin-top: 120px;
+	}
+	.undirfrettir_frettir1{
+	width: 100%;
+	height: 33%;
+	
+	margin-top: 0px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+	.undirfrettir_frettir2{
+	width: 100%;
+	height: 33%;
+	margin-top: -150px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+	.undirfrettir_frettir3{
+	width: 100%;
+	height: 33%;
+	
+	margin-top: -150px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+    
+	.undirfrettir_frettir11{
+	width: 100%;
+	height: 33%;
+	
+	margin-top: -120px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+	.undirfrettir_frettir12{
+	width: 100%;
+	height: 33%;
+	margin-top: -200px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+	.undirfrettir_frettir13{
+	width: 100%;
+	height: 33%;
+	
+	margin-top: -200px;
+	padding-left: 0.3125em;
+	text-align: center;
+	}
+	section {
+		height: 250px;
+	}
+	section h1{
+		margin-top: -10px;
+	}
+	.deadpool_mynd1{
+		display: none;
+	}
+	label img{
+		width: 40px;
+		height: 40px;
+		position: fixed;
+	}
+	.linkar{
 		width: 100%;
 	}
+	.insta{
+		float: left;
+        margin-top: 60px;
+		padding-top: 200px;
+		padding-left: 25%;
+		background: transparent;
+		left: 50%;
+	}
+	.insta img{
+		width: 325px;
+		margin-left: -55%;
+        margin-top: -60px;
+	}
+	footer{
+		height: 1500px;
+	}
+	.trailer{
+	float: left;
+	width: 100%;
+        margin-top: -35px;
+	}
+	iframe{
+		margin-top: 20px;
+		width: 100%;
+		height: auto;
+	}
+    .kaupa{
+        width: 75%;
+        float: left;
+        height: 15%
+    }
+    body{
+    	width: auto;
+    }
+    h4{
+        height: 10px;
+    }
+    .leikur{
+        height: 90px;
+    }
 }
